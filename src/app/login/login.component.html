@@ -1,0 +1,23 @@
+<p>login works!</p>
+<a routerLink="/dashboard">logout</a>
+<form #authForm="ngForm" (ngSubmit)= "onSubmit(authForm)">
+  <label>email</label>
+<input
+  type="email"
+  ngModel
+  name="email"
+  required
+  email
+>
+<label>password</label>
+<input
+  type="password"
+  ngModel
+  name="password"
+  required
+>
+
+</form>
+
+<button class="f" type="submit" (click)="onSubmit(authForm)">submit</button>
+
