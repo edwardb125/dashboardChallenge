@@ -1,9 +1,23 @@
 .toolbar{
-  min-width: 100%;
+  width: 100%;
   background: green;
   margin: 0px;
+  overflow: hidden;
   padding : 0px;
+
+}
+
+.toolbar-parent{
   display: flex;
-  justify-content: center;
+  top: 0;
   flex-wrap: wrap;
+  text-align: center;
+  height: 60px;
+}
+
+.user-email{
+  float: right;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
