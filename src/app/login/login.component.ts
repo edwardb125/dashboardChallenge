@@ -10,13 +10,18 @@ export class LoginComponent implements OnInit {
   password = 'erfanhematig@gmail.com';
   email = 'jfjfjf';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
 
   onSubmit(form: NgForm){
-    console.log(form.value);
+    // if(!form.valid){
+    //   return;
+    // }
+    // const email = form.value.email;
+    // const password = form.value.password;
+    console.log(form.value)
     form.reset();
   }
 }
